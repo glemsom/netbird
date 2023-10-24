@@ -29,7 +29,7 @@ fi
 
 get_release() {
     local RELEASE=$1
-    if [ "$RELEASE" == "latest" ]; then
+    if [ "$RELEASE" = "latest" ]; then
         local TAG="latest"
     else
         local TAG="tags/${RELEASE}"
